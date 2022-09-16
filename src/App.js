@@ -41,11 +41,11 @@ function App() {
   );
 }
 
+const provider = new firebase.auth.GoogleAuthProvider();
 
 function SignIn() {
 
   const signInWithGoogle = () => {
-    const provider = new firebase.auth.GoogleAuthProvider();
     auth.signInWithPopup(provider);
   }
 
